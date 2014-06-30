@@ -9,16 +9,10 @@ public class MatrixUtils {
         return 0;
     }
 
-    public static int printMatrix(int m, int n){
-
-        return 0;
-    }
-
-    public static int transpotionMatrix(int m, int n){
-
-        return 0;
-    }
-
     public static void printMatrix(int[][] matrix) {
+    }
+
+    public static int transpotionMatrix(int[][] matrix) {
+        return 0;
     }
 }

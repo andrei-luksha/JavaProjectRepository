@@ -8,19 +8,21 @@ import java.util.Scanner;
 public class Runner {
 
      public static void main(String[] args){
+
         System.out.println("Please enter count of strings");
          Scanner scanner=new Scanner(System.in);
-         int stringsCount = scanner.nextInt();
+         int strCount = scanner.nextInt();
+
          System.out.println("Please enter count of colums");
-         int columsCount = scanner.nextInt();
+         int colCount = scanner.nextInt();
 
-         int[][] matrix = new int[stringsCount][columsCount];
-         int[][] TransMatrix1 = new int[columsCount][stringsCount];
+         int[][] matrix = new int[strCount][colCount];
+         int[][] Tmatrix = new int[colCount][strCount];
 
-         matrix = MatrixUtils.createMatrix(stringsCount,columsCount);
+         matrix[strCount][colCount]= MatrixUtils.createMatrix(strCount,colCount);
          MatrixUtils.printMatrix(matrix);
 
-         TransMatrix1=MatrixUtils.transpotionMatrix(matrix);
-         MatrixUtils.printMatrix(TransMatrix1);
+         Tmatrix[colCount][strCount]=MatrixUtils.transpotionMatrix(matrix);
+         MatrixUtils.printMatrix(Tmatrix);
      }
 }
