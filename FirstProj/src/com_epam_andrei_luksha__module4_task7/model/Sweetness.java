@@ -7,10 +7,10 @@ public class Sweetness {
 
     protected String sweetName;
     //protected Integer cost;
-    protected String sweetWeight;
+    protected Integer sweetWeight;
     //protected Date expDate;
 
-    public Sweetness(String sweetName, String sweetWeight) {
+    public Sweetness(String sweetName, Integer sweetWeight) {
         //public Sweetness(String name, Integer cost, Integer weight, Date expDate){
         super();    // вызов конструктора базового класса
                     //  и вызывает методы родительского класса
@@ -29,10 +29,10 @@ public class Sweetness {
     }
 
 
-    public String getSweetWeight() {
+    public Integer getSweetWeight() {
         return sweetWeight;
     }
-    public String setweetWeight() {
+    public Integer setweetWeight() {
         return this.sweetWeight = sweetWeight;
     }
 
