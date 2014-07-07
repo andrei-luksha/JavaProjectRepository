@@ -6,7 +6,8 @@ public class Child extends Person {
 	private Person father;
 	
 	public Child(String firstName, String secondName) {
-		super(firstName, secondName);
+
+        super(firstName, secondName);
 	}
 
 	public Child(String firstName, String secondName, Person mother, Person father) {
@@ -15,21 +16,25 @@ public class Child extends Person {
 		this.father = father;
 	}
 
-	public Person getMother() {
-		return mother;
-	}
-
-	public void setMother(Person mother) {
-		this.mother = mother;
-	}
-
-	public Person getFather() {
-		return father;
-	}
-
-	public void setFather(Person father) {
-		this.father = father;
-	}
+//
+//	public Person getMother() {
+//
+//        return mother;
+//	}
+//
+//	public void setMother(Person mother) {
+//        this.mother = mother;
+//	}
+//
+//	public Person getFather() {
+//
+//        return father;
+//	}
+//
+//	public void setFather(Person father) {
+//
+//        this.father = father;
+//	}
 
 	public String getInfo() {
 		return super.getInfo() + "\n Mother: " + mother.getInfo() + "\n Father: " + father.getInfo() + "\n\n";
