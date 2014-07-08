@@ -9,11 +9,12 @@ public class Sweet extends Sweetness {
 
     private Sweetness chololate;
 
-    public Sweet(String sweetName, String sweetWeight) {
+    public Sweet(String sweetName, Integer sweetWeight) {
         super(sweetName, sweetWeight);
     }
 
-    public Sweet(String sweetName, String sweetWeight,Sweetness chololate) {
+
+    public Sweet(String sweetName, Integer sweetWeight,Sweetness chololate) {
         super(sweetName, sweetWeight);
         this.chololate=chololate;
 

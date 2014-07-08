@@ -17,7 +17,7 @@ public class Runner {
 
         boolean repeat = true;
 
-        Sweetness chocolate = new Sweetness("chocolateSpartakSweet","10");
+        Sweetness chocolate = new Sweetness("chocolateSpartakSweet",10);
 
         List<Sweetness> sweetList = new ArrayList<>();
 
@@ -40,7 +40,7 @@ public class Runner {
                     System.out.println("Type sweet name: ");
                     String sweetName =new Scanner(System.in).nextLine();
                     System.out.println("Type sweet weight: ");
-                    String sweetWeight = new Scanner(System.in).nextLine();
+                    Integer sweetWeight = Integer.valueOf(new Scanner(System.in).nextLine());
 //                    System.out.println("Type sweet cost: ");
 //                    String sweetCost = new Scanner(System.in).nextLine();
 //                    System.out.println("Type sweet expDate: ");
@@ -56,10 +56,12 @@ public class Runner {
                 case 3:
                     for(Sweetness sweet : sweetList){
                         System.out.println(sweet.getInfo());
+                        System.out.println(sweet.getAllSweetWaight(sweetList));
                     }
                     break;
                 case 4:
                     Collections.sort(sweetList, new Utils.SortingGift());
+
                     for(Sweetness sweet : sweetList) {
                         System.out.println("Sweets was sorted: " + sweet.getInfo());
                     }

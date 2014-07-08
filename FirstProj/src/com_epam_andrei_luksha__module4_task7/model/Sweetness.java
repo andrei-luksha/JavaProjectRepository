@@ -1,5 +1,7 @@
 package com_epam_andrei_luksha__module4_task7.model;
 
+import java.util.List;
+
 /**
  * Created by Andrei_Luksha on 7/2/2014.
  */
@@ -8,6 +10,7 @@ public class Sweetness {
     protected String sweetName;
     //protected Integer cost;
     protected Integer sweetWeight;
+    private Integer allSweetWaight;
     //protected Date expDate;
 
     public Sweetness(String sweetName, Integer sweetWeight) {
@@ -38,5 +41,14 @@ public class Sweetness {
 
     public String getInfo(){
         return "Sweet name is: " + getSweetName() + ", with waight = " + getSweetWeight() + "\n\n";
+    }
+
+    public Integer getAllSweetWaight(List<Sweetness> sweetList) {
+        this.sweetWeight = sweetWeight;
+        allSweetWaight =0;
+        for (Sweetness sweet : sweetList){
+            allSweetWaight+=sweet.getSweetWeight();
+        }
+        return allSweetWaight;
     }
 }
